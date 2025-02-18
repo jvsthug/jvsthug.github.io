@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEEZY Clone</title>
+    <title></title>
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -45,7 +45,7 @@
         }
         .detail-container img {
             width: 100%;
-            max-width: 400px;
+            max-width: 200px;
         }
         .back {
             cursor: pointer;
@@ -58,15 +58,21 @@
             background: transparent; /* 투명 배경 */
             border: none; /* 테두리 없앰 */
         }
+        a {
+            text-decoration-line: none;
+            font-size: 20px;
+            display: block;
+            text-align: center;
+}
     </style>
 </head>
 <body>
     <div class="container" id="product-list">
-        <div class="product" onclick="showDetail('킁', './images/킁.jpg', '한국에 더는 안나오는 최고의 명작.')">
+        <div class="product" onclick="showDetail('킁', './images/킁.jpg' , '한국에 더는 안나오는 최고의 명작.')">
             <img src="./images/킁.jpg" alt="AB-01">
             <div class="product-name">AB-01</div>
         </div>
-        <div class="product" onclick="showDetail('걘', './images/걘.png', '전작보다 능숙해지고 현란해진 한글 멈블랩의 청사진.')">
+        <div class="product" onclick="showDetail('걘', './images/걘.png', '전작보다 능숙해지고 현란해진 랩스킬을 보여주는 앨범.')">
             <img src="./images//걘.png" alt="AB-02">
             <div class="product-name">AB-02</div>
         </div>
@@ -81,8 +87,8 @@
         <img id="detail-img" src="" alt="">
         <div class="product-name" id="detail-name"></div>
         <p id="detail-desc"></p>
-    </div>
-
+    </div><br><br>
+    <a href="jvsthug.html">킁 찬양글</a>
     <script>
         function showDetail(name, img, desc) {
             // 숨겨진 제품 목록을 보이지 않게 하고 상세 정보를 표시
